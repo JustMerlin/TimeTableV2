@@ -31,11 +31,6 @@ const Signup = () => {
 
             </form>
 
-
-
-
-
-
             <button onClick={(e) => {
 
                 if (name != "" && firstname != "") {

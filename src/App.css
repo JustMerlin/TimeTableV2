@@ -21,8 +21,18 @@ label {
     align-items: center;
 }
 
-.container {
+.espace {
+    margin-right: 10px;
+}
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
     width: 65vw;
     box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
     padding: 2em;
@@ -75,4 +85,17 @@ label {
 
 .form-group:focus-within {
     transform: scale(1.03, 1.03);
+}
+
+button {
+    background-color: #ccc;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    background-color: orange;
 }

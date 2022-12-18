@@ -18,10 +18,10 @@ const Connexion = () => {
 
             )}
             {cookies.name != undefined && (
-                <div>
+                <div className='center'>
                     <h1>Bonjour, {cookies.firstname}</h1>
                     <div>
-                        <button onClick={(e) => {
+                        <button className='espace' onClick={(e) => {
                             removeCookie("name");
                             removeCookie("firstname")
                         }}>Changer de nom</button>
