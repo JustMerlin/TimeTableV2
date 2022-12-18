@@ -12,23 +12,38 @@ const Signup = () => {
     };
 
     return (
-        <div>
+        <div className='signup'>
+            <div className="text">
+                <h2>Connexion</h2>
+            </div>
 
-            <h2>Connexion</h2>
-            <ul>
-                <li>Nom</li>
-                <input type="text" name='Nom' id="Name" onChange={(e) => setName(e.target.value)} />
-                <li>Prénom</li>
-                <input type="text" name='Prénom' id="FirstName" onChange={(e) => setFirstName(e.target.value)} />
-                <button onClick={(e) => {
+            <form>
+                <div className="form-group">
+                    <input placeholder='Etienne' type="text" className="form-control" name='Nom' id="Name" onChange={(e) => setName(e.target.value)} />
+                    <label className='form-label'>Nom</label>
+                </div>
 
-                    if (name != "" && firstname != "") {
-                        handle()
-                    }
-                }}>Connexion</button>
-            </ul>
+                <div className="form-group">
+                    <input placeholder='Martin' type="text" className="form-control" name='Prénom' id="FirstName" onChange={(e) => setFirstName(e.target.value)} />
+                    <label className='form-label'>Prénom</label>
+                </div>
 
-        </div>
+
+            </form>
+
+
+
+
+
+
+            <button onClick={(e) => {
+
+                if (name != "" && firstname != "") {
+                    handle()
+                }
+            }}>Connexion</button>
+
+        </div >
     );
 };
 
