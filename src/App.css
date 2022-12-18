@@ -46,6 +46,7 @@ label {
 }
 
 .form-label {
+    margin-left: 10px;
     font-size: 1em;
     color: #aaa;
     display: block;
@@ -80,7 +81,7 @@ label {
 
 .form-control:focus+.form-label,
 .form-control:not(:placeholder-shown)+.form-label {
-    transform: translateY(-3em) scale(.8);
+    transform: translate(-0.5em, -3em) scale(.8);
 }
 
 .form-group:focus-within {
