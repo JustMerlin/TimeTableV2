@@ -31,7 +31,7 @@ Date.prototype.getWeek = function () {
 let pageUsername = document.getElementsByClassName("username");
 
 //Change ENT username with the username request
-var userResponce = document.cookie.split('; ').find((row) => row.startsWith('name='))?.split('=')[1] + " " + document.cookie.split('; ').find((row) => row.startsWith('firstname='))?.split('=')[1].toUpperCase();
+var userResponce = document.cookie.split('; ').find((row) => row.startsWith('firstname='))?.split('=')[1] + " " + document.cookie.split('; ').find((row) => row.startsWith('name='))?.split('=')[1].toUpperCase();
 
 
 pageUsername[0].textContent = userResponce;
